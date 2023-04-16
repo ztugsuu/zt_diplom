@@ -22,7 +22,7 @@ extension _Widget on _NavigationBarWidgetState{
           ),
         ],
         currentIndex: _selectedIndex,
-        selectedItemColor: const Color.fromARGB(255, 255, 57, 7),
+        // selectedItemColor: const Color.fromARGB(255, 255, 57, 7),
         onTap: _onItemTapped,
       ),
     );

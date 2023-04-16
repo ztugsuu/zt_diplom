@@ -4,7 +4,7 @@ extension _Widget on _CarInfoState {
   Widget get _carInfo {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: const Color.fromARGB(255, 255, 57, 7),
+        // backgroundColor: const Color.fromARGB(255, 255, 57, 7),
         elevation: 0.0,
         centerTitle: true,
         shape: const RoundedRectangleBorder(
@@ -18,7 +18,7 @@ extension _Widget on _CarInfoState {
           style: TextStyle(
             fontWeight: FontWeight.bold,
             fontSize: 22,
-            color: Colors.white,
+            // color: Colors.white,
           ),
         ),
       ),
@@ -32,7 +32,7 @@ extension _Widget on _CarInfoState {
               style: TextStyle(
                 fontWeight: FontWeight.bold,
                 fontSize: 22,
-                color: Color.fromARGB(255, 255, 72, 0),
+                // color: Color.fromARGB(255, 255, 72, 0),
               ),
             ),
           ),
@@ -52,7 +52,7 @@ Widget get _type {
         child: Container(
           decoration: const BoxDecoration(
             shape: BoxShape.rectangle,
-            color: Color.fromARGB(255, 255, 72, 0),
+            // color: Color.fromARGB(255, 255, 72, 0),
             borderRadius: BorderRadius.all(
               Radius.circular(8),
             ),
@@ -86,7 +86,7 @@ Widget get _type2 {
         child: Container(
           decoration: const BoxDecoration(
             shape: BoxShape.rectangle,
-            color: Color.fromARGB(255, 255, 72, 0),
+            // color: Color.fromARGB(255, 255, 72, 0),
             borderRadius: BorderRadius.all(
               Radius.circular(20),
             ),

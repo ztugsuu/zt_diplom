@@ -4,7 +4,7 @@ extension _Widget on _ServiceTypeState {
   Widget get _serviceType {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: const Color.fromARGB(255, 255, 57, 7),
+        // backgroundColor: const Color.fromARGB(255, 255, 57, 7),
         elevation: 0.0,
         centerTitle: true,
         shape: const RoundedRectangleBorder(
@@ -18,24 +18,24 @@ extension _Widget on _ServiceTypeState {
           style: TextStyle(
             fontWeight: FontWeight.bold,
             fontSize: 22,
-            color: Colors.white,
+            // color: Colors.white,
           ),
         ),
       ),
       body: ListView(
         children: [
-           const Padding(
-             padding:  EdgeInsets.all(25),
-             child:  Text(
-                     'Санал болгож буй үйлчилгээ',
-                     textAlign: TextAlign.left,
-                     style: TextStyle(
-              fontWeight: FontWeight.bold,
-              fontSize: 22,
-              color: Color.fromARGB(255, 255, 72, 0),
-                     ),
-                   ),
-           ),
+          const Padding(
+            padding: EdgeInsets.all(25),
+            child: Text(
+              'Санал болгож буй үйлчилгээ',
+              textAlign: TextAlign.left,
+              style: TextStyle(
+                fontWeight: FontWeight.bold,
+                fontSize: 22,
+                // color: Color.fromARGB(255, 255, 72, 0),
+              ),
+            ),
+          ),
           _type,
         ],
       ),
@@ -51,9 +51,50 @@ Widget get _type {
       (index) => Padding(
         padding: const EdgeInsets.all(20),
         child: Container(
+            decoration: const BoxDecoration(
+              shape: BoxShape.rectangle,
+              // color: Color.fromARGB(255, 255, 72, 0),
+              borderRadius: BorderRadius.all(
+                Radius.circular(20),
+              ),
+            ),
+            width: 150,
+            height: 150,
+            child: ElevatedButton(
+              onPressed: null,
+              child: Column(
+                children: [
+                  Expanded(
+                    flex: 2,
+                    child: Icon(
+                      _typeService[index]["icon"],
+                    ),
+                  ),
+                  Expanded(
+                    flex: 1,
+                    child: Text(
+                      _typeService[index]["text"],
+                    ),
+                  ),
+                ],
+              ),
+            )),
+      ),
+    ),
+  );
+}
+
+Widget get _type1 {
+  return Wrap(
+    alignment: WrapAlignment.center,
+    children: List.generate(
+      _typeService.length,
+      (index) => Padding(
+        padding: const EdgeInsets.all(20),
+        child: Container(
           decoration: const BoxDecoration(
             shape: BoxShape.rectangle,
-            color: Color.fromARGB(255, 255, 72, 0),
+            // color: Color.fromARGB(255, 255, 72, 0),
             borderRadius: BorderRadius.all(
               Radius.circular(20),
             ),

@@ -13,14 +13,14 @@ extension _Widget on _LoginPageState {
             const Text(
               "Автозасварын нэгдсэн бүртгэл",
               style: TextStyle(
-                  color: Color.fromARGB(255, 255, 72, 0),
+                  // color: Color.fromARGB(255, 255, 72, 0),
                   fontSize: 25,
                   fontWeight: FontWeight.bold),
             ),
             const Text(
               "Тавтай морил",
               style: TextStyle(
-                  color: Color.fromARGB(255, 255, 72, 0),
+                  // color: Color.fromARGB(255, 255, 72, 0),
                   fontSize: 25,
                   fontWeight: FontWeight.bold),
             ),
@@ -40,7 +40,7 @@ extension _Widget on _LoginPageState {
                 label: const Text(
                   "Нэвтрэх нэр эсвэл майл хаяг",
                   style: TextStyle(
-                    color: Color.fromARGB(255, 255, 72, 0),
+                    // color: Color.fromARGB(255, 255, 72, 0),
                   ),
                 ),
               ),
@@ -62,7 +62,7 @@ extension _Widget on _LoginPageState {
                   label: const Text(
                     "Нууц үг",
                     style: TextStyle(
-                      color: Color.fromARGB(255, 255, 72, 0),
+                      // color: Color.fromARGB(255, 255, 72, 0),
                     ),
                   ),
                 ),
@@ -88,12 +88,12 @@ extension _Widget on _LoginPageState {
               height: 40,
               width: double.infinity,
               child: ElevatedButton(
-                style: ButtonStyle(
-                  backgroundColor: MaterialStateProperty.all(
-                    const Color.fromARGB(255, 255, 72, 0),
-                  ),
-                  foregroundColor: MaterialStateProperty.all(Colors.black),
-                ),
+                // style: ButtonStyle(
+                  // backgroundColor: MaterialStateProperty.all(
+                    // const Color.fromARGB(255, 255, 72, 0),
+                  // ),
+                  // foregroundColor: MaterialStateProperty.all(Colors.black),
+                // ),
                 onPressed: _onSubmit,
                 child: const Text("Нэвтрэх"),
               ),
