@@ -1,8 +1,12 @@
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:grage_app/screen/profile/login/index.dart';
+import 'package:grage_app/theme/themes.dart';
+
+import '../../data/car_services.dart';
+import '../../data/history.dart';
 
 part 'index.widget.dart';
-part 'index.function.dart';
 
 class Profile extends StatefulWidget {
   const Profile({super.key});
@@ -12,9 +16,8 @@ class Profile extends StatefulWidget {
 }
 
 class _ProfileState extends State<Profile> {
-  // bool _isLogged = false;
   @override
   Widget build(BuildContext context) {
-    return const LoginPage();
+    return _profilePage;
   }
 }
