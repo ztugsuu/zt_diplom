@@ -23,7 +23,7 @@ class _ServiceTypeState extends State<ServiceType> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: MyThemes.mainGreen,
+        backgroundColor: MyThemes.mainGreenBG,
         elevation: 0.0,
         centerTitle: true,
         shape: const RoundedRectangleBorder(

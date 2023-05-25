@@ -45,7 +45,7 @@ class BottomNav extends StatefulWidget {
 class _BottomNavState extends State<BottomNav> {
   int pageIndex = 0;
 
-  List pages = [const ServiceType(),  const CarInfo(), AutoPage()];
+  List pages = [const ServiceType(),  const AutoPostPage(), const AutoProfilePage()];
 
   @override
   Widget build(BuildContext context) {

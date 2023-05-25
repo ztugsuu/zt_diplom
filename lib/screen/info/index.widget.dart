@@ -33,7 +33,7 @@ Widget get _type {
                   Navigator.push(
                     context,
                     MaterialPageRoute(
-                      builder: ((context) => const CarBrand()),
+                      builder: ((context) =>  const AddPost()),
                     ),
                   );
                 } else if ("2" == postAddAndPostsData[index].id.toString()) {

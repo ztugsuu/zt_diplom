@@ -28,7 +28,7 @@ class _GetStartedState extends State<GetStarted> {
                     children: const [
                       SizedBox(height: 50),
                       Text(
-                        "Жолооч болон жижиг,\nдунд авто засварын\nгазард зориулсан \nгар утасны \nпрограмм",
+                        "Жолооч болон жижиг,\nдунд авто засварын\nгазарт зориулсан \nгар утасны \nпрограмм",
                         style: TextStyle(
                             fontSize: 32, fontWeight: FontWeight.w600),
                       ),

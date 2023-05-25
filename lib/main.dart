@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:firebase_core/firebase_core.dart';
+import 'package:grage_app/screen/home/car_brant_categories/carServiceType/publishedPost/detailsPost/index.dart';
 import 'firebase_options.dart';
 
 import 'screen/started/index.dart';
@@ -26,6 +27,9 @@ class MyApp extends StatelessWidget {
       title: _title,
       theme: myTheme,
       home: const GetStarted(),
+      // home: const DetailsPost(),
     );
   }
 }
+
+// isLoggedIn ? Login : Home

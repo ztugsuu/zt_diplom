@@ -1,5 +1,6 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
+import 'package:grage_app/screen/info/addPost/index.dart';
 
 import '../../data/categories.dart';
 import '../../theme/themes.dart';
@@ -20,7 +21,7 @@ class _CarInfoState extends State<CarInfo> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: MyThemes.mainGreen,
+        backgroundColor: MyThemes.mainGreenBG,
         elevation: 0.0,
         centerTitle: true,
         shape: const RoundedRectangleBorder(

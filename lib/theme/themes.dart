@@ -6,6 +6,7 @@ class MyThemes {
   static const iconColor = Colors.black;
   static const mainGreen = Color(0xff349874);
   static const mainGray = Color(0x29ffffff);
+  static const mainGreenBG = Color.fromARGB(44, 52, 152, 115);
 
   static final darkTheme = ThemeData(
     scaffoldBackgroundColor: Colors.grey.shade900,

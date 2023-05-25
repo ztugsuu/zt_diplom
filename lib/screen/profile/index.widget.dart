@@ -15,22 +15,59 @@ extension _Widget on _ProfileState {
                 height: 25,
               ),
               const Text(
-                "Last Service",
+                "Сүүлд хийсэн үйлчилгээ",
                 textAlign: TextAlign.center,
                 style: TextStyle(
                   // color: subText,
-                  fontSize: 12,
+                  fontSize: 15,
                   fontWeight: FontWeight.w600,
                 ),
               ),
               lastServiceList(),
+              // last service add
+              Align(
+                alignment: Alignment.center,
+                child: Material(
+                  color: MyThemes.mainGreenBG,
+                  borderRadius: BorderRadius.circular(15),
+                  child: InkWell(
+                    borderRadius: BorderRadius.circular(15),
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: ((context) => const AddPost()),
+                        ),
+                      );
+                    },
+                    splashColor: MyThemes.mainGray,
+                    child: Container(
+                      alignment: AlignmentDirectional.center,
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(15),
+                        border: Border.all(width: 2, color: MyThemes.mainGreen),
+                      ),
+                      width: 150,
+                      height: 40,
+                      child: const Text(
+                        "Нэмэх",
+                        textAlign: TextAlign.center,
+                        style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 18,
+                            fontWeight: FontWeight.w600),
+                      ),
+                    ),
+                  ),
+                ),
+              ),
               const SizedBox(height: 8),
               const Text(
-                "Service List",
+                "Тогтмол хийх үйлчилгээ",
                 textAlign: TextAlign.center,
                 style: TextStyle(
                   // color: subText,
-                  fontSize: 16,
+                  fontSize: 15,
                   fontWeight: FontWeight.w600,
                 ),
               ),

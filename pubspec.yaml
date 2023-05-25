@@ -19,6 +19,9 @@ dependencies:
   firebase_auth: ^4.4.2
   firebase_core: ^2.10.0
   cloud_firestore: ^4.5.3
+  carousel_slider: ^3.0.0
+  flutter_map: ^4.0.0
+
 
 dev_dependencies:
   flutter_test:
@@ -40,6 +43,7 @@ flutter:
   # To add assets to your application, add an assets section, like this:
   assets:
     - assets/images/
+    - assets/images/carPost/
     - assets/logo/
     - assets/logo/carBrand/
     - assets/logo/moto_brand/
