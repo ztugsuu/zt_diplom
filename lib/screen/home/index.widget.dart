@@ -47,58 +47,59 @@ Widget get _type {
                   Navigator.push(
                     context,
                     MaterialPageRoute(
-                      builder: ((context) => const MotoBrand()),
+                      builder: ((context) => const CarBrand()),
                     ),
                   );
                 } else if ("3" == serviceCategoriesData[index].id.toString()) {
                   Navigator.push(
                     context,
                     MaterialPageRoute(
-                      builder: ((context) => const AutoWash()),
+                      builder: ((context) => const CarBrand()),
                     ),
                   );
                 } else if ("4" == serviceCategoriesData[index].id.toString()) {
                   Navigator.push(
                     context,
                     MaterialPageRoute(
-                      builder: ((context) => const ProductBrand()),
+                      builder: ((context) => const CarBrand()),
                     ),
                   );
                 }
               },
-              splashColor: MyThemes.mainGreen,
+              splashColor: MyThemes.mainGray,
               child: Container(
-                  decoration: const BoxDecoration(
-                    shape: BoxShape.rectangle,
-                    // color: Color.fromARGB(255, 255, 72, 0),
-                    borderRadius: BorderRadius.all(
-                      Radius.circular(20),
-                    ),
+                decoration: const BoxDecoration(
+                  shape: BoxShape.rectangle,
+                  // color: Color.fromARGB(255, 255, 72, 0),
+                  borderRadius: BorderRadius.all(
+                    Radius.circular(20),
                   ),
-                  width: 150,
-                  height: 150,
-                  child: Column(
-                    children: [
-                      Expanded(
-                        flex: 2,
-                        child: Image.asset(
-                          serviceCategoriesData[index].logo.toString(),
-                          height: 50,
-                          width: 50,
+                ),
+                width: 150,
+                height: 150,
+                child: Column(
+                  children: [
+                    Expanded(
+                      flex: 2,
+                      child: Image.asset(
+                        serviceCategoriesData[index].logo.toString(),
+                        height: 50,
+                        width: 50,
+                      ),
+                    ),
+                    Expanded(
+                      flex: 1,
+                      child: Text(
+                        serviceCategoriesData[index].title.toString(),
+                        style: const TextStyle(
+                          fontSize: 18,
+                          fontWeight: FontWeight.bold,
                         ),
                       ),
-                      Expanded(
-                        flex: 1,
-                        child: Text(
-                          serviceCategoriesData[index].title.toString(),
-                          style: const TextStyle(
-                            fontSize: 18,
-                            fontWeight: FontWeight.bold,
-                          ),
-                        ),
-                      ),
-                    ],
-                  )),
+                    ),
+                  ],
+                ),
+              ),
             ),
           ),
         ),

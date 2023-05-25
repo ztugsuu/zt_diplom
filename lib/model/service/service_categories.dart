@@ -29,3 +29,32 @@ class PostAddAndPostCatelogies {
   String? name;
   PostAddAndPostCatelogies({this.id, this.logo, this.name});
 }
+
+// car service turul
+
+class CarServiTypeCatelogies {
+  String? id;
+  String? logo;
+  String? name;
+  CarServiTypeCatelogies({this.id, this.logo, this.name});
+}
+
+class CarPostCatelogies {
+  String? id;
+  String? title;
+  String? text;
+  String? photo;
+  int? phone;
+  String? location;
+  String? price;
+  String? schedule;
+  CarPostCatelogies(
+      {this.id,
+      this.title,
+      this.text,
+      this.photo,
+      this.phone,
+      this.location,
+      this.price,
+      this.schedule});
+}

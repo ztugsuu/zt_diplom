@@ -1,17 +1,13 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
+import 'package:grage_app/screen/info/index.dart';
 
 import '../profile/index.dart';
 import '../profile/login/index.dart';
 
-class AutoPage extends StatefulWidget {
-  const AutoPage({super.key});
+class AutoProfilePage extends StatelessWidget {
+  const AutoProfilePage({super.key});
 
-  @override
-  State<AutoPage> createState() => _AutoPageState();
-}
-
-class _AutoPageState extends State<AutoPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -30,17 +26,22 @@ class _AutoPageState extends State<AutoPage> {
 }
 
 
-// class AutoPage extends StatefulWidget {
-//   const AutoPage({super.key});
+class AutoPostPage extends StatelessWidget {
+  const AutoPostPage({super.key});
 
-//   @override
-//   State<AutoPage> createState() => _AutoPageState();
-// }
-
-// class _AutoPageState extends State<AutoPage> {
-//   @override
-//   Widget build(BuildContext context) {
-//     return 
-//   }
-// }
-
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      body: StreamBuilder<User?>(
+        stream: FirebaseAuth.instance.authStateChanges(),
+        builder: (context, snapshot) {
+          if (snapshot.hasData) {
+            return const CarInfo();
+          } else {
+            return const LoginPage();
+          }
+        },
+      ),
+    );
+  }
+}

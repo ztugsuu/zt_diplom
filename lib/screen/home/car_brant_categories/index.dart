@@ -2,9 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:grage_app/theme/themes.dart';
 
 import '../../../data/car_brand_categories.dart';
+import '../../../data/categories.dart';
+import 'carServiceType/index.dart';
 
 part 'index.widget.dart';
-part 'index.function.dart';
 
 class CarBrand extends StatefulWidget {
   const CarBrand({super.key});
